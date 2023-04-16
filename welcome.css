@@ -1,0 +1,25 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: black;
+}
+#m{
+    top: 20%;
+    left: 18%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+#pictrue{
+    width: 700px;
+    height: 800px;
+    top: 50%;
+    left: 75%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+#try{
+    width: 110px;
+    height: 40px;
+    background: white;
+}
