@@ -10,7 +10,7 @@ function send(){
         document.getElementById("question").disabled = true
         document.getElementById("send").disabled = true
 	lastsend.push(document.getElementById('question').value)
-        document.getElementById("chat").innerHTML += "<li>" + "😀:" + String(document.getElementById('question').value) + "</li>"
+        document.getElementById("chat").innerHTML += "<li>" + "👨‍💻:" + String(document.getElementById('question').value) + "</li>"
         $.ajax({
             url: 'https://nejmw5w7fq.hk.aircode.run/chat',
             type: 'GET',
@@ -48,7 +48,7 @@ function send(){
             error: function(xhr, status, error) {
                 alert('error')
 				lastsend.splice(lastsend.length-1,1)
-                document.getElementById("chat").innerHTML = document.getElementById("chat").innerHTML + "<li>"+"sorry,network error or connect error"+"</li>"
+                document.getElementById("chat").innerHTML = document.getElementById("chat").innerHTML + "<li>"+"❌:sorry,network error or connect error"+"</li>"
                 console.log(xhr.responseText);
                 console.log(status);
                 console.log(error);
