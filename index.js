@@ -12,7 +12,7 @@ function send(){
 	lastsend.push(document.getElementById('question').value)
         document.getElementById("chat").innerHTML += "<li>" + "👨‍💻:" + String(document.getElementById('question').value) + "</li>"
         $.ajax({
-            url: 'https://nejmw5w7fq.hk.aircode.run/chat',
+            url: 'https://itgnf1qf4r.hk.aircode.run/chat',
             type: 'GET',
             dataType: 'json',
             data: {question: String(lastsend)},
