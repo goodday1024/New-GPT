@@ -3,7 +3,7 @@ function send(){
     
     const msg = document.getElementById('question').value
     if (msg == ''){
-        alert('input is null')
+        return false
     }
     else{
         document.getElementById("main").style.display = "none"
