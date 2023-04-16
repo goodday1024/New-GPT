@@ -25,16 +25,21 @@ function send(){
 					
 					setTimeout(() => {
 						document.getElementById("chat").innerHTML += String(data.reply)[i]
+                        			document.getElementById("chat").innerHTML += "🁢"
 						if (i < String(data.reply).length-1){
 							appendstr()
 						}
 						else{
-							document.getElementById("question").disabled = false
-                			document.getElementById("send").disabled = false
-                			document.getElementById('question').value = ""
+						     	document.getElementById("question").disabled = false
+                					document.getElementById("send").disabled = false
+                					document.getElementById('question').value = ""
 						}
 						i++
 					}, 100)
+                    			setTimeout(() => {
+                        			var s = document.getElementById("chat").innerHTML.replace("🁢","")
+                        			document.getElementById("chat").innerHTML = s
+                    			}, 200)
 					
 				}
 				appendstr()
