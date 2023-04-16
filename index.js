@@ -1,4 +1,5 @@
 const lastsend = []
+var cid = ''
 function send(){
     
     const msg = document.getElementById('question').value
@@ -15,8 +16,9 @@ function send(){
             url: 'https://itgnf1qf4r.hk.aircode.run/chat',
             type: 'GET',
             dataType: 'json',
-            data: {question: String(lastsend)},
+            data: {question: document.getElementById("question").value, cid: cid},
             success: function(data) {
+		    		cid = data.cid
 				lastsend.push(data.reply)
 				console.log(data)
 				document.getElementById("chat").innerHTML += "<li>" + "🤖:"
