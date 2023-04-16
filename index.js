@@ -9,7 +9,7 @@ function send(){
         document.getElementById("main").style.display = "none"
         document.getElementById("question").disabled = true
         document.getElementById("send").disabled = true
-		lastsend.push(document.getElementById('question').value)
+	lastsend.push(document.getElementById('question').value)
         document.getElementById("chat").innerHTML += "<li>" + "😀:" + String(document.getElementById('question').value) + "</li>"
         $.ajax({
             url: 'https://nejmw5w7fq.hk.aircode.run/chat',
