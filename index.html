@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/896aa2e142.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>WebGPT</title>
+</head>
+<body>
+    <h1 id="title">
+        WebGPT
+    </h1>
+    <ul id="chat">
+        
+    </ul>
+    <div id="windows">
+        <input type="text" placeholder="输入问题" id="question">
+        <button id="send" onclick="send()">
+            <i class="fa-solid fa-paper-plane"></i>
+        </button>
+    </div>
+    <div id="main">
+        <h3>
+            「测试一下WebGPT
+            选一个试一试吧」
+        </h3>
+        <div id="code" onclick="hide1()">请帮我写一段代码</div>
+        <div id="write" onclick="hide()">请帮我写一篇文章</div>
+        <div id="jock" onclick="hide2()">请给我讲一个笑话</div>
+    </div>
+    <h1 id="webgpt">WebGPT👍</h1>
+	<h3 id="New">New Edition</h3>
+</body>
+</html>
