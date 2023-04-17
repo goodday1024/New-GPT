@@ -81,5 +81,5 @@ function cancel(){
 	
 	alert("successed")
 	
-	
+	key()
 }	
