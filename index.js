@@ -77,7 +77,7 @@ function key(){
 }
 function cancel(){
 	if (localStorage.getItem('key') != " "){
-		localStorage.clearItem('key')
+		localStorage.removeItem('key')
 		if (localStorage.getItem('key') == " "){
 			alert("successed")
 		}
