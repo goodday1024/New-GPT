@@ -64,7 +64,7 @@ function key(){
 	
     	if (localStorage.getItem('key') != " "){
 		
-		if(localStorage.getItem('key') == 'zzh20081022@gmail.com'){
+		if(localStorage.getItem('key') == "zzh20081022@gmail.com"){
 			alert("您好管理员")
 		}
 		else{
@@ -75,3 +75,16 @@ function key(){
 		localStorage.setItem('key', prompt("请输入您的APIkey(前往openAI官网获取)"))
 	}
 }
+function cancel(){
+	if (localStorage.getItem('key') != " "){
+		localStorage.clearItem('key')
+		if (localStorage.getItem('key') == " "){
+			alert("successed")
+		}
+		else{
+			alert("failed")
+		}
+	}
+		
+		
+}	
