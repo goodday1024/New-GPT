@@ -27,7 +27,7 @@ function send(){
 					
 					setTimeout(() => {
 						document.getElementById("chat").innerHTML += String(data.reply)[i]
-                        			document.getElementById("chat").innerHTML += "🁢"
+                        			document.getElementById("chat").innerHTML += "🖋️"
 						if (i < String(data.reply).length-1){
 							appendstr()
 						}
@@ -39,7 +39,7 @@ function send(){
 						i++
 					}, 100)
                     			setTimeout(() => {
-                        			var s = document.getElementById("chat").innerHTML.replace("🁢","")
+                        			var s = document.getElementById("chat").innerHTML.replace("🖋️","")
                         			document.getElementById("chat").innerHTML = s
                     			}, 200)
 					
