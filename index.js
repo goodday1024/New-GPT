@@ -13,7 +13,7 @@ function send(){
 	lastsend.push(document.getElementById('question').value)
         document.getElementById("chat").innerHTML += "<li>" + "👨‍💻:" + String(document.getElementById('question').value) + "</li>"
         $.ajax({
-            url: 'https://itgnf1qf4r.hk.aircode.run/chat',
+            url: 'https://hd363kkqqb.hk.aircode.run/hello',
             type: 'GET',
             dataType: 'json',
             data: {question: document.getElementById("question").value, cid: cid},
@@ -58,5 +58,13 @@ function send(){
                 document.getElementById("question").disabled = false
             }
         })
+    }
+}
+function key(){
+    if (localStorage.getItem('key') != " "){
+        alert("APIkey获取成功!" + localStorage.getItem('key'))
+    }
+    else{
+        localStorage.setItem('key', prompt("请输入您的APIkey(前往openAI官网获取)"))
     }
 }
