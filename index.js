@@ -61,10 +61,6 @@ function send(){
     }
 }
 function key(){
-    if (localStorage.getItem('key') != " "){
-        alert("APIkey获取成功!" + localStorage.getItem('key'))
-    }
-    else{
-        localStorage.setItem('key', prompt("请输入您的APIkey(前往openAI官网获取)"))
-    }
+	localStorage.setItem('key', prompt("请输入您的APIkey(前往openAI官网获取)"))
+    
 }
