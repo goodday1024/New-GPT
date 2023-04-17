@@ -76,15 +76,10 @@ function key(){
 	}
 }
 function cancel(){
-	if (localStorage.getItem('key') != " "){
-		localStorage.removeItem('key')
-		if (localStorage.getItem('key') == " "){
-			alert("successed")
-		}
-		else{
-			alert("failed")
-		}
-	}
-		
-		
+	
+	localStorage.removeItem('key')
+	
+	alert("successed")
+	
+	
 }	
