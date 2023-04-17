@@ -16,7 +16,7 @@ function send(){
             url: 'https://hd363kkqqb.hk.aircode.run/hello',
             type: 'GET',
             dataType: 'json',
-            data: {question: document.getElementById("question").value, cid: cid},
+            data: {question: document.getElementById("question").value, cid: cid, apikey: localStorage.getItem('key')},
             success: function(data) {
 		    		cid = data.cid
 				lastsend.push(data.reply)
