@@ -68,7 +68,7 @@ function key(){
 			alert("您好管理员")
 		}
 		else{
-			alert("Key" + localStorage.getItem('key'))
+			alert("Key:" + localStorage.getItem('key'))
 		}
 	}
 	else{
