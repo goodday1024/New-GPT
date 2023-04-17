@@ -79,7 +79,7 @@ function key(){
 }
 function cancel(){
 	
-	localStorage.removeItem('key')
+	localStorage.setItem('key', " ")
 	
 	alert("successed")
 	
