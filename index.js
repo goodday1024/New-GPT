@@ -62,13 +62,13 @@ function send(){
 }
 function key(){
 	
-    	if (localStorage.getItem('key') != ''){
+    	if (localStorage.getItem('key') != " "){
 		
 		if(localStorage.getItem('key') == 'zzh20081022@gmail.com'){
 			alert("您好管理员")
 		}
 		else{
-			alert("Key", localStorage.getItem('key'))
+			alert("Key" + localStorage.getItem('key'))
 		}
 	}
 	else{
