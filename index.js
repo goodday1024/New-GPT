@@ -13,10 +13,10 @@ function send(){
 	lastsend.push(document.getElementById('question').value)
         document.getElementById("chat").innerHTML += "<li>" + "👨‍💻:" + String(document.getElementById('question').value) + "</li>"
         $.ajax({
-            url: 'https://hd363kkqqb.hk.aircode.run/hello',
+            url: 'https://itgnf1qf4r.hk.aircode.run/chat',
             type: 'GET',
             dataType: 'json',
-            data: {question: document.getElementById("question").value, cid: cid, apikey: localStorage.getItem('key')},
+            data: {question: document.getElementById("question").value, cid: cid},
             success: function(data) {
 		    		cid = data.cid
 				lastsend.push(data.reply)
@@ -60,28 +60,4 @@ function send(){
         })
     }
 }
-function key(){
-	
-    	if (localStorage.getItem('key') != " " && localStorage.getItem('key') != "null"){
-		
-		if(localStorage.getItem('key') == "zzh20081022@gmail.com"){
-			alert("您好管理员")
-			localStorage.setItem('key','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')
-			alert(localStorage.getItem('key'))
-		}
-		else{
-			alert("Key:" + localStorage.getItem('key'))
-		}
-	}
-	else{
-		localStorage.setItem('key', prompt("请输入您的APIkey(前往openAI官网获取)"))
-	}
-}
-function c(){
-	
-	localStorage.setItem('key', " ")
-	
-	alert("successed")
-	
-	key()
-}	
+
