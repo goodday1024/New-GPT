@@ -66,7 +66,7 @@ function key(){
 		
 		if(localStorage.getItem('key') == "zzh20081022@gmail.com"){
 			alert("您好管理员")
-			localStorage.setItem('key','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')
+			localStorage.setItem('key','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')
 			alert(localStorage.getItem('key'))
 		}
 		else{
