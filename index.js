@@ -77,7 +77,7 @@ function key(){
 		localStorage.setItem('key', prompt("请输入您的APIkey(前往openAI官网获取)"))
 	}
 }
-function cancel(){
+function c(){
 	
 	localStorage.setItem('key', " ")
 	
