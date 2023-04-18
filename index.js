@@ -62,7 +62,7 @@ function send(){
 }
 function key(){
 	
-    	if (localStorage.getItem('key') != " " || localStorage.getItem('key') != "null"){
+    	if (localStorage.getItem('key') != " " && localStorage.getItem('key') != "null"){
 		
 		if(localStorage.getItem('key') == "zzh20081022@gmail.com"){
 			alert("您好管理员")
