@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: azure;
+    background-image: url(./Cool\ Sky.jpg);
 }
 #title{
     position: absolute;
@@ -20,14 +20,34 @@ body{
 #question{
     width: 400px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 40px;
     outline: none;
+    transition: 0.2s;
+    border: none;
+    resize: none;
+}
+#question:hover{
+    height: 60px;
+    border-radius: 10px;
+    width: 500px;
+}
+#question:focus{
+    height: 60px;
+    border-radius: 10px;
+    width: 500px;
 }
 #send{
     width: 40px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 40px;
     background: white;
+    border: none;
+    transition: 0.2s;
+    color: #3366ff;
+}
+#send:hover{
+    height: 45px;
+    width: 45px;
 }
 #chat{
     position: absolute;
@@ -36,7 +56,7 @@ body{
     left: 50%;
     max-height: 450px;
     overflow: auto;
-    min-width:500px;
+    min-width:300px;
 }
 #main{
     position: absolute;
@@ -47,19 +67,27 @@ body{
     height: 300px;
     text-align: center;
 }
-#webgpt{
-    z-index: -1;
-    color: gainsboro;
-    top: 20%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-}
 #New{
 	z-index: -1;
-    color: gainsboro;
+    color: white;
     top: 28%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
+}
+#newchat{
+    background-color: #3366ff;
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    outline: none;
+    color: white;
+    border: none;
+    transition: 0.2s;
+}
+#newchat:hover{
+    width: 150px;
+}
+ul li{
+    list-style-type: none;
 }
